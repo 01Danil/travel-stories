@@ -1,0 +1,65 @@
+.filter-bar {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto; /* Центрируем блок */
+  box-sizing: border-box;
+}
+
+.filter-bar-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.filter-bar-input {
+  width: 100%;
+  padding: 10px 10px 10px 10px; /* Уменьшено padding справа */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+  height: 40px; /* Устанавливаем одинаковую высоту для поля */
+}
+
+.filter-bar-clear-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #888;
+  cursor: pointer;
+  padding: 0;
+}
+
+.filter-bar-clear-btn:hover {
+  color: #333;
+}
+
+.filter-bar-suggestions {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 10;
+  box-sizing: border-box;
+}
+
+.filter-bar-suggestion {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.filter-bar-suggestion:hover {
+  background: #f0f0f0;
+}
